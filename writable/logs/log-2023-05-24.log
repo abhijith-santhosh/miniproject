@@ -1,0 +1,525 @@
+ERROR - 2023-05-24 12:17:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:17:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:18:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:18:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:20:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:20:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:20:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:20:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:26:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:26:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:26:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:26:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:26:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:26:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:27:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'insurance', 3306, '', 0)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#10 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\miniproject\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\miniproject\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\miniproject\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\miniproject\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\miniproject\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\miniproject\app\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\miniproject\app\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+#7 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+#8 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+#9 C:\xampp\htdocs\miniproject\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\miniproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:27:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\InsuranceModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\InsuranceController.php(12): App\Models\InsuranceModel->getCompanies()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:19 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:21 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:21 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:21 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:21 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:21 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:32:22 --> Invalid file: "insurance/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insurance/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:33:12 --> Attempt to read property "id" on array
+in APPPATH\Views\home.php on line 10.
+ 1 APPPATH\Views\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:33:13 --> Attempt to read property "id" on array
+in APPPATH\Views\home.php on line 10.
+ 1 APPPATH\Views\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:33:13 --> Attempt to read property "id" on array
+in APPPATH\Views\home.php on line 10.
+ 1 APPPATH\Views\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:33:13 --> Attempt to read property "id" on array
+in APPPATH\Views\home.php on line 10.
+ 1 APPPATH\Views\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:34:59 --> Attempt to read property "id" on array
+in APPPATH\Views\insurance\home.php on line 10.
+ 1 APPPATH\Views\insurance\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:39:39 --> Attempt to read property "name" on array
+in APPPATH\Views\insurance\home.php on line 10.
+ 1 APPPATH\Views\insurance\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:39:41 --> Attempt to read property "name" on array
+in APPPATH\Views\insurance\home.php on line 10.
+ 1 APPPATH\Views\insurance\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:40:02 --> Attempt to read property "id" on array
+in APPPATH\Views\insurance\home.php on line 10.
+ 1 APPPATH\Views\insurance\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:41:02 --> Attempt to read property "name" on array
+in APPPATH\Views\insurance\home.php on line 10.
+ 1 APPPATH\Views\insurance\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:41:03 --> Attempt to read property "name" on array
+in APPPATH\Views\insurance\home.php on line 10.
+ 1 APPPATH\Views\insurance\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/home', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(14): view('insurance/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
