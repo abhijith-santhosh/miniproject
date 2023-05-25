@@ -75,3 +75,12 @@ in APPPATH\Views\insurance\brands.php on line 73.
  7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 06:21:04 --> syntax error, unexpected end of file
+in APPPATH\Views\insurance\costs.php on line 107.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/costs', [], true)
+ 3 APPPATH\Controllers\InsuranceController.php(38): view('insurance/costs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->costs('1', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

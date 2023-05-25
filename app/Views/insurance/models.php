@@ -31,14 +31,14 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Insurance Companies</a>
+            <a class="navbar-brand" href="#">Car Insurance Quotes by Amica  <img src="https://www.insuranzy.com/img/logo.png" alt="Insuranzy logo" title="Insuranzy Logo" style="width: 149.3px; height: 44px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="/miniproject/public/index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -61,11 +61,20 @@
                 </li>
             <?php endforeach; ?>
         </ul>
+        <p style="font-weight: bold;">
+            When comparing car insurance quotes, it's essential to consider various factors to ensure a comprehensive evaluation. Here's a step-by-step guide to help you through the process:
+            <ul>
+                <li>Before requesting quotes, assess your coverage requirements. Consider factors such as your car's value, your budget, and any specific coverage options you need, such as collision coverage or roadside assistance.</li>
+                <li>Compare the premiums offered by different providers for the same coverage levels. Pay attention to any additional fees or charges that may be included.</li>
+                <li>Evaluate the coverage options provided by each insurer.</li>
+            </ul>
+        </p>
+        
     </div>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; <?php echo date('Y'); ?> Insurance Companies. All rights reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> © 2023 insuranzy.com</p>
         </div>
     </footer>
 
