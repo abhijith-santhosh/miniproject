@@ -15,17 +15,33 @@
         }
         
         .company-list {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 30px;
         }
         
         .company-item {
-            padding: 10px;
-            border: 1px solid #ccc;
+            padding: 20px;
+            border: 3px solid #ccc;
             border-radius: 5px;
             font-family: Arial, sans-serif;
-            font-size: 16px;
+            font-size: 18px;
+            background-color: #f8f9fa;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .company-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .company-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background-color: #e9ecef;
+            border-color: #999;
         }
         
         .footer {
@@ -71,9 +87,11 @@
                 <div class="company-item">
                     <a href="<?php echo base_url('insurance/brands/' . $company['id']); ?>"><?php echo $company['name']; ?></a>
                 </div>
+
+                
             <?php endforeach; ?>
         </div>
-        <p style="font-weight: bold;">
+        <p style="font-weight: bold; font-size: 16px; line-height: 1.6;">
             When comparing car insurance quotes, it's essential to consider various factors to ensure a comprehensive evaluation. Here's a step-by-step guide to help you through the process:
             <ul>
                 <li>Before requesting quotes, assess your coverage requirements. Consider factors such as your car's value, your budget, and any specific coverage options you need, such as collision coverage or roadside assistance.</li>

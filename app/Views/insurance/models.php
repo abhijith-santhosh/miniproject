@@ -25,6 +25,27 @@
             padding: 20px;
             text-align: center;
         }
+
+        .list-group-item {
+            background-color: #f8f9fa;
+            border-color: #dee2e6;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #e9ecef;
+            border-color: #ced4da;
+            color: #333;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .list-group-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +75,7 @@
     
     <div class="container">
         <h1>Car Models</h1>
-        <ul class="list-group">
+        <ul class="list-group mt-5">
             <?php foreach ($models as $model): ?>
                 <li class="list-group-item">
                     <a href="<?php echo base_url('insurance/costs/' . $model->id); ?>"><?php echo $model->name; ?></a>
