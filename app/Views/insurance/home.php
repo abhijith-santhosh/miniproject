@@ -32,7 +32,7 @@
             background-color: #343a40;
             color: #fff;
             text-align: center;
-            padding: 80px;
+            padding: 40px;
         }
         
         .mt-auto {
