@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Insurance Companies</title>
+    <title>Insurance Costs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
-        html, body {
-            height: 100%;
-        }
-        
-        .container {
-            min-height: 100%;
+        body {
+            padding: 20px;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
-        
-        .company-list {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
         }
-        
-        .company-item {
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #fff;
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
+            text-align: center;
         }
-        
+
         .footer {
             background-color: #343a40;
             color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 80px;
-        }
-        
-        .mt-auto {
             margin-top: auto;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Insurance Companies</a>
@@ -65,20 +72,30 @@
         </nav>
     </header>
 
-    <div class="container mt-5">
-        <div class="company-list">
-            <?php foreach ($companies as $company): ?>
-                <div class="company-item">
-                    <a href="<?php echo base_url('insurance/brands/' . $company['id']); ?>"><?php echo $company['name']; ?></a>
-                </div>
-            <?php endforeach; ?>
-        </div>
+    <div class="container">
+        <h1>Insurance Costs</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Car Model</th>
+                    <th>Insurance Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($costs as $cost): ?>
+                    <tr>
+                        <td><?php echo $cost->model_id; ?></td>
+                        <td><?php echo $cost->cost; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
 
-    <footer class="footer mt-auto">
-        <p>&copy; <?php echo date('Y'); ?> Insurance Companies. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <?php echo date('Y'); ?> Insurance Companies. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFx

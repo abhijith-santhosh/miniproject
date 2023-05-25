@@ -36,6 +36,7 @@ class InsuranceController extends BaseController
         $data['costs'] = $insuranceModel->getCostsByModel($modelId);
         
         return view('insurance/costs', $data);
+        
     }
 }
 
