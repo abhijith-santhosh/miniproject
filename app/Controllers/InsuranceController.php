@@ -20,7 +20,11 @@ class InsuranceController extends BaseController
     public function brands($company_id)
     {
         $CarModel= new BrandModel();
+        $insuranceModel = new InsuranceModel();
         $data['brands'] = $CarModel->getBrand($company_id);
+        $data['companies'] = $insuranceModel->getCompanies();
+        $data['companiename'] = $insuranceModel->getCompanieName($company_id);
+        $data['company_id']=$company_id;
        return view('insurance/brands', $data);
     }
     

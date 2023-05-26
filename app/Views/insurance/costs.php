@@ -92,7 +92,8 @@
     </header>
 
     <div class="container-fluid">
-        <h1>Insurance Costs</h1>
+        <h1> <?php echo $costs[0]['insurancename']; ?> Insurance Costs</h1>
+        
         <table class="table">
             <thead>
                 <tr>
@@ -105,7 +106,7 @@
                 <?php foreach ($costs as $cost): ?>
                     <tr>
                         
-                       <td><?php echo $cost['model_id']; ?></td>
+                       <td><?php echo $cost['modelname']; ?></td>
                         <td><?php echo $cost['cost']; ?></td>
                  
                     </tr>
