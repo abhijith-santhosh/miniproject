@@ -24,18 +24,18 @@ class InsuranceController extends BaseController
        return view('insurance/brands', $data);
     }
     
-    public function models($brand_id,$name)
+    public function models($brand_id,$insurance_id)
     {
         $CarModel = new CarModel();
-        $data['models'] = $CarModel->getCarModel($brand_id,$name);
+        $data['models'] = $CarModel->getCarModel($brand_id,$insurance_id);
         
         return view('insurance/models', $data);
     }
     
-    public function costs($cost,$model_id)
+    public function costs($model_id)
     {
         $costModel = new CostModel();
-        $data['costs'] =  $costModel->getCostsByModel($cost,$model_id);
+        $data['costs'] =  $costModel->getCostsByModel($model_id);
         
         return view('insurance/costs', $data);
         

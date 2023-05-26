@@ -5,12 +5,13 @@ use CodeIgniter\Model;
 class CarModel extends Model{
     protected $table='model';
     protected  $primaryKey='id';
-    protected $allowedFields = ['name','brand_id'];
+    protected $allowedFields = ['insurance_id','brand_id'];
 
-    public function getCarModel($brand_id,$name)
+    public function getCarModel($brand_id,$insurance_id)
     {
         // $this->where('name', $name);
         $this->where('brand_id', $brand_id);
+        $this->where('insurance_id', $insurance_id);
         return $this->findAll();
     }
 }

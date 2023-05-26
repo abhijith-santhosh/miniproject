@@ -60,7 +60,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Car Insurance Quotes by Amica  <img src="https://www.insuranzy.com/img/logo.png" alt="Insuranzy logo" title="Insuranzy Logo" style="width: 149.3px; height: 44px;"></a>
+                <a class="navbar-brand" href="#">Car Insurance Quotes by Amica  </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

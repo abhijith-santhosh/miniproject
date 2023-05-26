@@ -70,7 +70,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="https://www.insuranzy.com/img/logo.png" alt="Insuranzy logo" title="Insuranzy Logo"></a>
+               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -98,13 +98,16 @@
                 <tr>
                     <th>Car Model</th>
                     <th>Insurance Cost</th>
+                
                 </tr>
             </thead>
             <tbody> 
                 <?php foreach ($costs as $cost): ?>
                     <tr>
-                        <td><?php echo $cost['model_id']; ?></td>
+                        
+                       <td><?php echo $cost['model_id']; ?></td>
                         <td><?php echo $cost['cost']; ?></td>
+                 
                     </tr>
                 <?php endforeach; ?>
             </tbody>
