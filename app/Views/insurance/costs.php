@@ -100,11 +100,11 @@
                     <th>Insurance Cost</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody> 
                 <?php foreach ($costs as $cost): ?>
                     <tr>
-                        <td><?php echo $cost->model_id; ?></td>
-                        <td><?php echo $cost->cost; ?></td>
+                        <td><?php echo $cost['model_id']; ?></td>
+                        <td><?php echo $cost['cost']; ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -118,7 +118,7 @@
                 <li>Evaluate the coverage options provided by each insurer.</li>
             </ul>
         </p>
-    </div>
+    </div>  
 
     <footer class="footer">
         <div class="container">

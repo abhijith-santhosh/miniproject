@@ -90,7 +90,7 @@
         <ul class="brand-list">
             <?php foreach ($brands as $brand): ?>
                 <li class="brand-item">
-                    <a class="brand-link" href="<?php echo base_url('insurance/models/' . $brand->id); ?>"><?php echo $brand->name; ?></a>
+                    <a class="brand-link" href="<?php echo base_url('insurance/models/' . $brand['id']); ?>"><?php echo $brand['name']; ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>

@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use App\Models\InsuranceModel;
+use App\Models\BrandModel;
+use App\Models\CarModel;
+use App\Models\CostModel;
 
 class InsuranceController extends BaseController
 {
@@ -14,26 +17,25 @@ class InsuranceController extends BaseController
         return view('insurance/home', $data);
     }
     
-    public function brands($companyId)
+    public function brands($company_id)
     {
-        $insuranceModel = new InsuranceModel();
-        $data['brands'] = $insuranceModel->getBrandsByCompany($companyId);
-        
-        return view('insurance/brands', $data);
+        $CarModel= new BrandModel();
+        $data['brands'] = $CarModel->getBrand($company_id);
+       return view('insurance/brands', $data);
     }
     
-    public function models($brandId)
+    public function models($brand_id,$name)
     {
-        $insuranceModel = new InsuranceModel();
-        $data['models'] = $insuranceModel->getModelsByBrand($brandId);
+        $CarModel = new CarModel();
+        $data['models'] = $CarModel->getCarModel($brand_id,$name);
         
         return view('insurance/models', $data);
     }
     
-    public function costs($modelId)
+    public function costs($cost,$model_id)
     {
-        $insuranceModel = new InsuranceModel();
-        $data['costs'] = $insuranceModel->getCostsByModel($modelId);
+        $costModel = new CostModel();
+        $data['costs'] =  $costModel->getCostsByModel($cost,$model_id);
         
         return view('insurance/costs', $data);
         

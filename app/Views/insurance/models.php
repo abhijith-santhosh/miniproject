@@ -78,7 +78,7 @@
         <ul class="list-group mt-5">
             <?php foreach ($models as $model): ?>
                 <li class="list-group-item">
-                    <a href="<?php echo base_url('insurance/costs/' . $model->id); ?>"><?php echo $model->name; ?></a>
+                    <a href="<?php echo base_url('insurance/costs/' . $model['id']); ?>"><?php echo $model['name']; ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>
