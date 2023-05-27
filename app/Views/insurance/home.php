@@ -60,7 +60,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Car Insurance Quotes by Amica  </a>
+                <a class="navbar-brand" href="#">Car Insurance   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -102,7 +102,7 @@
     </div>
 
     <footer class="footer mt-auto">
-        <p>&copy; <?php echo date('Y'); ?> © 2023 insuranzy.com</p>
+        <p>&copy; <?php echo date('Y'); ?> insurance.com</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

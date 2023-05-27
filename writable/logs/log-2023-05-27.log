@@ -1,0 +1,22 @@
+CRITICAL - 2023-05-27 04:40:40 --> Undefined variable $campaniename
+in APPPATH\Views\insurance\costs.php on line 95.
+ 1 APPPATH\Views\insurance\costs.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campaniename', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\costs.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\costs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/costs', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(44): view('insurance/costs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->costs('3', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 04:40:53 --> Undefined variable $cost
+in APPPATH\Views\insurance\costs.php on line 95.
+ 1 APPPATH\Views\insurance\costs.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cost', 'C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\costs.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\miniproject\\app\\Views\\insurance\\costs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('insurance/costs', [], true)
+ 5 APPPATH\Controllers\InsuranceController.php(44): view('insurance/costs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InsuranceController->costs('3', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsuranceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

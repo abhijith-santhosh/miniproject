@@ -126,7 +126,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; <?php echo date('Y'); ?> © 2023 insuranzy.com</p>
+            <p>&copy; <?php echo date('Y'); ?> insuranc.com</p>
         </div>
     </footer>
 

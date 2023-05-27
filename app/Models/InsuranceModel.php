@@ -24,7 +24,7 @@ class InsuranceModel extends Model
     {
        $this->where('id',$company_id);
        $results = $this->findAll();
-       print_r($results);
+    //    print_r($results);
        return $results;
       
        
